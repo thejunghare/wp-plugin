@@ -6,14 +6,15 @@ Version: 0.0.1
 Author: thejunghare
 */
 
-function social_icons($icons){
+function social_icons($icons)
+{
     $buttons = '
     <div class="social-sharing">
-        <a href="" . get_permalink() . " target="">Share on Facebook</a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=' . get_permalink() . '" target="_blank">Share on Facebook</a>
     </div>';
-    
+
     return $icons . $buttons;
 }
 
-add_fliter('the_content', 'social_icons');
+add_filter('the_content', 'social_icons');
 ?>
