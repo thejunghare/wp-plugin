@@ -9,9 +9,9 @@ Author: thejunghare
 function custom_404_page()
 {
     if(is_404()){
-        echo '<div class="">
-                Oops! The page you.'.'re looking for doesn.'.'t exist. Please try another page or use the search bar.
-            </div>';
+        echo '<div class="custom-page">
+        Oops! The page you\'re looking for doesn\'t exist. Please try another page or use the search bar.
+        </div>';
     }
 }
 
